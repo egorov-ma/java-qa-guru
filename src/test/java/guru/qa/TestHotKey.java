@@ -1,4 +1,4 @@
-package key.hot;
+package guru.qa;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
