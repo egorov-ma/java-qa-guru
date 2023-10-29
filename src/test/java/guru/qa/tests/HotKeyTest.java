@@ -1,9 +1,9 @@
-package guru.qa.hotkey;
+package guru.qa.tests;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class TestHotKey {
+public class HotKeyTest {
     @Test
     void loginTest() {
         //String x = "22.10.2020";
