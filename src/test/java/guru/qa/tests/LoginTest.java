@@ -19,7 +19,6 @@ public class LoginTest {
 
     @BeforeAll
     public static void setUp() {
-        Configuration.holdBrowserOpen = true;
         Configuration.pageLoadStrategy = "eager";
     }
 
