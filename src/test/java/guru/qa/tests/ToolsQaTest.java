@@ -12,7 +12,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class ToolsQaTest {
     @BeforeAll
     static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";

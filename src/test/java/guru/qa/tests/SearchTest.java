@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class SearchTest {
     @BeforeAll
     public static void setUp() {
-        Configuration.holdBrowserOpen = true;
         Configuration.pageLoadStrategy = "eager";
     }
     @Test
