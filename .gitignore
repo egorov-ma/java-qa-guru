@@ -13,6 +13,9 @@
 
 ### Gradle ###
 .gradle
+.gradlew
+.gradlew.bat
+.settings.gradle.kts
 
 ### Logs ###
 *.log
