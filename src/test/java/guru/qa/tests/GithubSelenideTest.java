@@ -14,7 +14,6 @@ public class GithubSelenideTest {
     @BeforeEach
     void setUp() {
         Configuration.baseUrl = "https://github.com";
-        Configuration.holdBrowserOpen = true;
     }
 
     @Test
