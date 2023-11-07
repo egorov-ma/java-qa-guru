@@ -1,6 +1,5 @@
 package guru.qa.tests;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Point;
@@ -12,7 +11,6 @@ public class DropTest {
 
     @BeforeEach
     void setUp() {
-        Configuration.holdBrowserOpen = true;
         open("https://the-internet.herokuapp.com/drag_and_drop");
     }
 
