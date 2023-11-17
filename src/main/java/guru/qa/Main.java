@@ -1,31 +1,13 @@
 package guru.qa;
 
+import static guru.qa.DataTypes.*;
+
 public class Main {
     public static void main(String[] args) {
-        // ПРИМИТИВНЫЕ ТИПЫ ДАННЫХ
-        // Целочисленные типы данных. Отличаются размером выделяемой памяти
-        byte aByte = 100; // 8бит
-        short aShort = 150; // 16бит
-        int aInt = 50; // 32бит
-        long aLong = 100; // 64бит
-        // Типы с плавающий точкой. Отличаются размером выделяемой памяти
-        float aFloat = 1.1f; // 32бит
-        double aDouble = 1.2; // 64бит
-        // Символьный тип данных
-        char aChar = '\u0000'; // 16бит. Символы в кодировке UNICODE
-        // Логический тип
-        boolean aBoolean = false;
+        javaDataTypes();
+    }
 
-        //ССЫЛОЧНЫЕ ТИПЫ ДАННЫХ
-        Integer aInteger = null;
-        Character aCharacter = null;
-
-        //ОПЕРАТОРЫ
-        // 1. Присвоение =
-        // 2. Арифметические + - * / %
-        // 3. Логические операторы < > <= >= == !=
-        // 4. Операторы && ||
-
+    public static void javaDataTypes() {
         System.out.println("### Математические операторы ###");
         System.out.println("Сложение " + (aByte + aShort));
         System.out.println("Вычитание " + (aShort - aInt));
@@ -61,14 +43,14 @@ public class Main {
         System.out.println("###");
         System.out.println("### Комбинации типов данных (int и double) ###");
         System.out.println("Сложение в double = " + (1 + 1.5));
-        System.out.println("Сложение в int = " + (int)(1 + 1.5));
+        System.out.println("Сложение в int = " + (int) (1 + 1.5));
         System.out.println("Вычитание в double = " + (1 - 1.5));
-        System.out.println("Вычитание в int = " + (int)(1 - 1.5));
+        System.out.println("Вычитание в int = " + (int) (1 - 1.5));
         System.out.println("Умножение в double = " + (1 * 1.5));
-        System.out.println("Умножение в int = " + (int)(1 * 1.5));
+        System.out.println("Умножение в int = " + (int) (1 * 1.5));
         System.out.println("Деление в double = " + (1 / 1.5));
-        System.out.println("Деление в int = " + (int)(1 / 1.5));
+        System.out.println("Деление в int = " + (int) (1 / 1.5));
         System.out.println("Остаток от деления в double = " + (1 % 1.5));
-        System.out.println("Остаток от деления в int = " + (int)(1 % 1.5));
+        System.out.println("Остаток от деления в int = " + (int) (1 % 1.5));
     }
 }
