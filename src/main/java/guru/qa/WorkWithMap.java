@@ -1,6 +1,6 @@
 package guru.qa;
 
-public class WorkWithMap {
+public class WorkWithMap extends Object{
     public void searchInMap() {
     }
 
@@ -8,5 +8,10 @@ public class WorkWithMap {
     }
 
     public void deleteInMap() {
+    }
+
+    @Override
+    public String toString() {
+        return "WorkWithMap{}";
     }
 }

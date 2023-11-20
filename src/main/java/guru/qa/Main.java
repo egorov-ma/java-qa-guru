@@ -3,8 +3,6 @@ package guru.qa;
 import java.util.ArrayList;
 import java.util.List;
 
-import static guru.qa.DataTypes.*;
-
 public class Main {
     static WorkWithList list = new WorkWithList();
     static WorkWithQuery query = new WorkWithQuery();
@@ -22,8 +20,13 @@ public class Main {
         // Каждый класс должен использовать один из существующих в Java видов циклов.
         // Реализовать поиск элементов, добавление, удаление в отдельных методах.
 
-        list.addInList("Ferrari");
+
         list.addInList(car);
+        list.addInList(2, "Ferrari");
+        list.addInList(1, "Volga");
+        list.addInList(car);
+
+
         System.out.println(list);
         list.searchInList();
         list.deleteInList();
