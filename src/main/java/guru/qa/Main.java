@@ -1,10 +1,12 @@
 package guru.qa;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 public class Main {
-    static WorkWithQuery query = new WorkWithQuery();
+
     static WorkWithMap map = new WorkWithMap();
     static WorkWithSet set = new WorkWithSet();
 
@@ -16,19 +18,26 @@ public class Main {
         WorkWithList list = new WorkWithList();
         List<String> car = new ArrayList<>(List.of("Kamaz", "Gaz", "Uaz"));
         list.addListToList(car);
-        list.addToListByElement(2, "Ferrari");
+        list.addToListByIndex(2, "Ferrari");
         list.addToList("Volga");
         System.out.println("added: " + list);
         list.deleteFromListByElement("Ferrari");
         list.deleteFromListByIndex(1);
         System.out.println("delete: " + list);
-        list.searchInList("Ferrari", list);
+        System.out.println("Search in list by element: " + list.searchInListByElement("Kamaz"));
+        System.out.println("Search in list by index: " + list.searchInListByIndex(2));
 
-
-
-        query.searchInQuery();
-        query.addInQuery();
-        query.deleteInQuery();
+        WorkWithQuery query = new WorkWithQuery();
+        Queue<String> color = new ArrayDeque<>();
+        color.add("Red");
+        color.add("Orange");
+        color.add("Yellow");
+        query.addQueryToQuery(color);
+        query.addToQuery("Green");
+        System.out.println("added: " + query);
+        query.deleteFromQueryByElement("Orange");
+        System.out.println("delete: " + query);
+        System.out.println("Search in query: " + query.searchToQuery("Green"));
 
         map.searchInMap();
         map.addInMap();
