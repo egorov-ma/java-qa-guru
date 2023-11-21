@@ -23,7 +23,11 @@ public class WorkWithQuery {
     }
 
     public void deleteFromQueryByElement(String element) {
-        queue.remove(element);
+        if (queue.contains(element)) {
+            queue.remove(element);
+        } else {
+            System.out.println("Element not found in the queue.");
+        }
     }
 
     public boolean searchToQuery(String element) {

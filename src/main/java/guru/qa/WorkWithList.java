@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WorkWithList {
-    private final List<String> list = new ArrayList<>();
+    private List<String> list = new ArrayList<>();
+
 
     @Override
     public String toString() {
