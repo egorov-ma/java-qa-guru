@@ -4,13 +4,6 @@ import javax.sound.midi.Soundbank;
 import java.util.*;
 
 public class Main {
-
-    static WorkWithMap map = new WorkWithMap();
-    static WorkWithSet set = new WorkWithSet();
-
-    // Практика: реализовать 4 класса, использующих разные коллекции внутри.
-    // Каждый класс должен использовать один из существующих в Java видов циклов.
-    // Реализовать поиск элементов, добавление, удаление в отдельных методах.
     public static void main(String[] args) {
 
         WorkWithList list = new WorkWithList();
@@ -40,7 +33,6 @@ public class Main {
         System.out.println();
 
         WorkWithMap map = new WorkWithMap();
-        HashMap books = new HashMap();
         map.addElement("The Wonderful Wizard of Oz");
         map.addElement("Alice's Adventures in Wonderland");
         map.addElement("123", "Ray Bradbury: Short Stories");
@@ -53,8 +45,16 @@ public class Main {
         map.deleteElementByValue("Test");
         map.displayElements();
 
-
-
-
+        WorkWithSet set = new WorkWithSet();
+        set.addElement("One");
+        set.addElement("Two");
+        set.addElement("Three");
+        System.out.println(set);
+        set.addElement("Two");
+        System.out.println(set);
+        set.removeElement("Two");
+        System.out.println(set);
+        set.searchElement("Three");
+        set.searchElement("Four");
     }
 }
